@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import './Nesflic.css'
 
 const Nesflic = () => {
     const [peliculas, setPeliculas] = useState([]); 
@@ -25,7 +26,7 @@ const Nesflic = () => {
 
   return (
     <div>
-        <h1>Nesflic</h1>
+        <h1 className="titulo">Nesflic</h1>
         <form onSubmit={manejadorSubmit}>
             <input type="text" name="busqueda"/>
             <button type="submit"> Buscar </button>
